@@ -83,6 +83,16 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-sm-4 where">
+                <br><h3>WHERE?</h3>
+                <form>
+                <h4><label> <input type="radio" name="WHERE" value="London"> London </label></h4>
+                <h4><label> <input type="radio" name="WHERE" value="Manchester"> Manchester </label></h4>
+                <h4><label> <input type="radio" name="WHERE" value="Birmingham"> Birmingham </label></h4>
+                <h4><label> <input type="radio" name="WHERE" value="Bristol"> Bristol </label></h4>
+                <h4><label> <input type="radio" name="WHERE" value="Edinburgh"> Edinburgh </label></h4>
+                </form>
+            </div>
             <div class="col-sm-4 who">
                 <br><h3>WHO?</h3>
                 <form>
@@ -93,19 +103,15 @@
                 <h4><label> <input type="radio" name="WHO" value="Other"> Other </label></h4>
                 </form>
             </div>
-            <div class="col-sm-4 where">
-                <br><h3>WHERE?</h3>
-                <form>
-                <h4><label> <input type="radio" name="WHERE" value="Greece"> Greece </label></h4>
-                <h4><label> <input type="radio" name="WHERE" value="Italy"> Italy </label></h4>
-                <h4><label> <input type="radio" name="WHERE" value="France"> France </label></h4>
-                <h4><label> <input type="radio" name="WHERE" value="Lebanon"> Lebanon </label></h4>
-                <h4><label> <input type="radio" name="WHERE" value="Jordan"> Jordan </label></h4>
-                <h4><label> <input type="radio" name="WHERE" value="Syria"> Syria </label></h4>
-                </form>
-            </div>
             <div class="col-sm-4 how">
-                <br><h3>HOW</h3>
+                <br><h3>HOW?</h3>
+                <form>
+                <h4><label> <input type="checkbox" name="HOW" value="Donation"> Donation </label></h4>
+                <h4><label> <input type="checkbox" name="HOW" value="Fund Raising"> Fundraising </label></h4>
+                <h4><label> <input type="checkbox" name="HOW" value="Events"> Events </label></h4>
+                <h4><label> <input type="checkbox" name="HOW" value="Volunteer in London"> Volunteer in London </label></h4>
+                <h4><label> <input type="checkbox" name="HOW" value="Volunteer Abroad"> Volunteer Abroad </label></h4>
+                </form>
             </div>
     </section>
 
@@ -146,10 +152,17 @@
     <script src="jquery/jquery.js"></script>
 
     <script type="text/javascript">
-        function enableWhere () {
-            $('.where').addClass('enabled');
+        function enableWho () {
+            $('.who').addClass('enabled');
         }
-        $('.who label').click(enableWhere)
+        $('.where label').click(enableWho)
+    </script>
+
+    <script type="text/javascript">
+        function enableHow () {
+            $('.how').addClass('enabled');
+        }
+        $('.who label').click(enableHow)
     </script>
 
     <!-- Bootstrap Core JavaScript -->

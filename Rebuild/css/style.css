@@ -96,8 +96,8 @@
  	transition:background .5s ease-in-out,padding .5s ease-in-out
  }
 
- .where {
- 	color: grey;
+ .who {
+ 	visibility: hidden;
  	border-style: solid;
  	border-radius: 15px;
 	}
@@ -118,13 +118,33 @@
  		text-indent: 10px;
  	}
 
-.who {
+  .how label {
+ 		display: block;
+ 		text-align: left;
+ 		font-size: 16px;
+ 		word-spacing: 10px;
+ 		text-indent: 10px;
+ 	}
+
+.where {
  		border-style: solid;
  		border-radius: 15px;
  	}
 
-.where.enabled {
-	color: white;
+ .how {
+ 		visibility: hidden;
+ 		border-style: solid;
+ 		border-radius: 15px;
+ 	}
+
+.who.enabled {
+	visibility: visible;
+	animation: fade 1s ease-in;
+}
+
+.how.enabled {
+	visibility: visible;
+	animation: fade 1s ease-in;
 }
 
  .navbar-custom.top-nav-collapse {
